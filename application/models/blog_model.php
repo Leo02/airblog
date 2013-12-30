@@ -1,14 +1,8 @@
 <?php
 class blog_model extends CI_Model {
 
-  public function __construct()
-  {
-    $this->load->database();
-  }
-
   public function get_blog($id = FALSE){
-    if ($id === FALSE)
-    {
+    if ($id === FALSE){
       $this->db->order_by('id','DESC'); 
       $this->db->select('id,title');
       $query = $this->db->get('blog');

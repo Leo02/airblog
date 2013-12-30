@@ -1,52 +1,48 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Blog extends CI_Controller {
 
-  public function __construct()
-  {
-    parent::__construct();
-    $this->load->model('blog_model');
-    $this->load->library('session');
-  }
-
-  public function view($id){
-    $data['blog_item'] = $this->blog_model->get_blog($id);
-
-    if (empty($data['blog_item']))
+    public function __construct()
     {
-      show_404();
+        parent::__construct();
     }
-    if ($this->session->userdata('user')) {
-      $data['user'] = $this->session->userdata('user');
-    }
-    $this->load->view('templates/header', $data);
-    $this->load->view('blog/view', $data);
-    $this->load->view('templates/footer');
-  }
 
-  public function index(){
-    $data['blog'] = $this->blog_model->get_blog();
-    if ($this->session->userdata('user')) {
-      $data['user'] = $this->session->userdata('user');
-    }
-    $this->load->view('templates/header', $data);
-    $this->load->view('blog/index', $data);
-    $this->load->view('templates/footer');
-  }
+    public function view($id){
+        $data['blog_item'] = $this->blog_model->get_blog($id);
 
-  public function about_me(){
-    $data['blog_item'] = $this->blog_model->get_blog('2');
-    if ($this->session->userdata('user')) {
-      $data['user'] = $this->session->userdata('user');
+        if (empty($data['blog_item'])){
+            show_404();
+        }
+        if ($this->session->userdata('user')) {
+            $data['user'] = $this->session->userdata('user');
+        }
+        $this->load->view('templates/header', $data);
+        $this->load->view('blog/view', $data);
+        $this->load->view('templates/footer');
     }
-    $this->load->view('templates/header', $data);
-    $this->load->view('blog/view', $data);
-    $this->load->view('templates/footer');
-  }
 
-  public function rss(){
-    $this->load->helper('url');
-    $data['blog_item'] = $this->blog_model->get_rss();
-    $data['base_url'] = base_url();
-    $this->load->view('blog/rss', $data);
-  }
+    public function index(){
+        $data['blog'] = $this->blog_model->get_blog();
+        if ($this->session->userdata('user')) {
+            $data['user'] = $this->session->userdata('user');
+        }
+        $this->load->view('templates/header', $data);
+        $this->load->view('blog/index', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function about_me(){
+        $data['blog_item'] = $this->blog_model->get_blog('2');
+        if ($this->session->userdata('user')) {
+            $data['user'] = $this->session->userdata('user');
+        }
+        $this->load->view('templates/header', $data);
+        $this->load->view('blog/view', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function rss(){
+        $data['blog_item'] = $this->blog_model->get_rss();
+        $data['base_url'] = base_url();
+        $this->load->view('blog/rss', $data);
+    }
 }

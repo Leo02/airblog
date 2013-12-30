@@ -4,7 +4,7 @@
   </div>
   <?php echo validation_errors();
   $attributes = array('role' => 'form');
-  echo form_open('admin/index',$attributes) ?>
+  echo form_open('admin/create',$attributes) ?>
 
   <div class="form-group">
 	  <label for="title">标题</label> 

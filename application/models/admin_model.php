@@ -1,15 +1,8 @@
 <?php
 class admin_model extends CI_Model {
 
-  public function __construct()
-  {
-    $this->load->database();
-  }
-
-  public function login()
-  {
+  public function login(){
     $pwd_md5 = md5($this->input->post('user').$this->input->post('password'));
-
     $query = $this->db->get_where('user', array('user' => $this->input->post('user'),'password' => $pwd_md5));
     $login = count($query->result());
     if($login == 1){
@@ -19,7 +12,7 @@ class admin_model extends CI_Model {
     }
   }
 
-  public function set_blog(){
+  public function create(){
     $data = array(
       'title' => $this->input->post('title'),
       'body' => $this->input->post('body')
