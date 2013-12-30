@@ -19,7 +19,7 @@ demo：[faceair的博客](http://blog.faceair.net)
 * 所存`password`为 md5(password+user)
 * 注意修改`\appliction\view\blog\view.php`里面的多说评论js
 * 如果是nginx请配置所有请求到index.php
-
+* 我使用了多说的自定义css，详情<http://www.shejidaren.com/use-css3-to-create-a-beautiful-comment-ui.html>
 
 ###Todo
 
