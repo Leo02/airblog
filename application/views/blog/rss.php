@@ -1,6 +1,6 @@
 <?php
 header('Content-type: text/xml; charset=utf-8');
-
+date_default_timezone_set ('Asia/Shanghai');
 $str = '';
 $str .= '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 $str .= '<rss version="2.0"' . "\n";
