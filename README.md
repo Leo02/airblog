@@ -24,3 +24,9 @@ demo：[faceair的博客](http://blog.faceair.net)
 ###Todo
 
 * 前端...
+* 草稿箱功能
+
+###授权
+
+遵循MIT授权协议。
+http://opensource.org/licenses/MIT
