@@ -13,14 +13,14 @@ $str .= 'xmlns:slash="http://purl.org/rss/1.0/modules/slash/"' . "\n";
 $str .= '>' . "\n";
 $str .= '<channel>' . "\n";
 $str .= '<title>faceair的博客</title>' . "\n";
-$url = 'http://'  . $_SERVER['SERVER_NAME'] . ($_SERVER["SERVER_PORT"] == 80 ? '' : ':' . $_SERVER["SERVER_PORT"]) . $_SERVER["REQUEST_URI"]; 
+$url = 'http://'  . $_SERVER['SERVER_NAME'] . $_SERVER["REQUEST_URI"];
 $str .= '<atom:link href="' . $url . '" rel="self" type="application/rss+xml" />' . "\n";
-$str .= '<link>http://zhihudaily.sinaapp.com/</link>' . "\n";
+$str .= '<link>http://' . $_SERVER['SERVER_NAME'] . '/</link>' . "\n";
 $str .= '<description>开放姿态</description>' . "\n";
 $str .= '<lastBuildDate>'. date(DATE_RSS) . '</lastBuildDate>' . "\n";
 $str .= '<language>zh-CN</language>' . "\n";
 $str .= '<sy:updatePeriod>faceair</sy:updatePeriod>' . "\n";
-$str .= '<generator>http://zhihudaily.sinaapp.com/</generator>' . "\n";
+$str .= '<generator>http://' . $_SERVER['SERVER_NAME'] . '/</generator>' . "\n";
 
 foreach($blog_item as $item){ 
     $str .= '<item>' . "\n";

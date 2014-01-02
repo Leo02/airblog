@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
     <style>
         body {
-            font-family:'Helvetica Neue',Helvetica,Arial,Sans-serif;
-            margin: 100px auto;
+            font-family:'Open Sans', Helvetica, Arial, sans-serif;
+            margin: 80px auto;
             width: 60%;
-            font-size:16px;
+            font-size: 16px;
             background:url(http://zhihudaily-zhihudaily.stor.sinaapp.com/airbg.png) repeat 0 0;
         }
         .navbar {
@@ -18,11 +18,8 @@
             border: none;
             box-shadow: 0px 3px 3px #999;
         }
-        .block li {
-            margin: 10px 0;
-        }
         .block {
-            margin-bottom:20px;
+            margin-bottom:24px;
             background:#FFF;
             padding:5px 15px 15px 15px;
             border-radius:5px;
@@ -35,12 +32,19 @@
         .block img {
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
         }
-        blockquote p {
-            font-size: 14px;
+        .block h1,h2,h3,h4,h5,h6{
+            font-weight:bold;
+            margin:24px 0 12px;
         }
-        .block pre{
-            font-size: 15px;
-            line-height: 20px;
+        blockquote p {
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .block pre,p{
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 24px;
         }
         @media (max-width: 480px) {
             body {
