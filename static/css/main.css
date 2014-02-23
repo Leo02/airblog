@@ -1,0 +1,40 @@
+body {
+    font-family:'Open Sans', Helvetica, Arial, sans-serif;
+    margin: 80px auto;
+    font-size: 16px;
+    width: 96%;
+    max-width: 800px;
+    background:url(../img/airbg.png) repeat 0 0;
+}
+.navbar {
+    border: none;
+    box-shadow: 0px 0px 1px #999;
+}
+.block {
+    margin-bottom:24px;
+    background:#FFF;
+    padding:5px 15px 15px 15px;
+    border-radius:5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+
+}
+.block a {
+    text-decoration:none;
+}
+.block img {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
+}
+.block h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+    margin:24px 0 12px;
+}
+blockquote p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.block pre,p{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}

@@ -4,56 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <title>faceair的博客</title>
-    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family:'Open Sans', Helvetica, Arial, sans-serif;
-            margin: 80px auto;
-            width: 60%;
-            font-size: 16px;
-            background:url(http://zhihudaily-zhihudaily.stor.sinaapp.com/airbg.png) repeat 0 0;
-        }
-        .navbar {
-            opacity: 0.8;
-            border: none;
-            box-shadow: 0px 3px 3px #999;
-        }
-        .block {
-            margin-bottom:24px;
-            background:#FFF;
-            padding:5px 15px 15px 15px;
-            border-radius:5px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
-
-        }
-        .block a {
-            text-decoration:none;
-        }
-        .block img {
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
-        }
-        .block h1,h2,h3,h4,h5,h6{
-            font-weight:bold;
-            margin:24px 0 12px;
-        }
-        blockquote p {
-            line-height: 24px;
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-        .block pre,p{
-            line-height: 24px;
-            font-size: 14px;
-            margin-bottom: 24px;
-        }
-        @media (max-width: 480px) {
-            body {
-                margin: 80px auto;
-                width: 96%;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
