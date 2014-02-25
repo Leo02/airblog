@@ -6,7 +6,7 @@ use \Michelf\Markdown;
 ?>
 
 <div class="block">
-    <div class="page-header">
+    <div class="page-header header">
         <h2><?php echo $blog_item['title'] ?></h2>
         <small>发布于 <?php echo $blog_item['time'] . '. </small>';
             if(isset($user)){echo '<a style="color:#DE4C1C" href="/admin/' .$blog_item['id']. '">编辑</a>';}?>
